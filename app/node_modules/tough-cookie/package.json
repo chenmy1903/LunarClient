@@ -1,0 +1,34 @@
+{
+  "author": {
+    "name": "Jeremy Stashewsky",
+    "email": "jstash@gmail.com",
+    "website": "https://github.com/stash"
+  },
+  "license": "BSD-3-Clause",
+  "name": "tough-cookie",
+  "description": "RFC6265 Cookies and Cookie Jar for node.js",
+  "version": "2.5.0",
+  "homepage": "https://github.com/salesforce/tough-cookie",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/salesforce/tough-cookie.git"
+  },
+  "main": "./lib/cookie",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "async": "^1.4.2",
+    "genversion": "^2.1.0",
+    "nyc": "^11.6.0",
+    "string.prototype.repeat": "^0.2.0",
+    "vows": "^0.8.2"
+  },
+  "dependencies": {
+    "psl": "^1.1.28",
+    "punycode": "^2.1.1"
+  }
+}

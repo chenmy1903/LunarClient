@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "name": "har-schema",
+  "description": "JSON Schema for HTTP Archive (HAR)",
+  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
+  "homepage": "https://github.com/ahmadnassri/har-schema",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadnassri/har-schema.git"
+  },
+  "license": "ISC",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "lib"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "ajv": "^5.0.0",
+    "codeclimate-test-reporter": "^0.4.0",
+    "cz-conventional-changelog": "^1.2.0",
+    "echint": "^2.1.0",
+    "semantic-release": "^6.3.2",
+    "snazzy": "^5.0.0",
+    "tap": "^8.0.1"
+  }
+}

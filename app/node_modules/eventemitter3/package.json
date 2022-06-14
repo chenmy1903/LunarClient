@@ -1,0 +1,28 @@
+{
+  "name": "eventemitter3",
+  "version": "4.0.7",
+  "description": "EventEmitter3 focuses on performance while maintaining a Node.js AND browser compatible interface.",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "umd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/primus/eventemitter3.git"
+  },
+  "author": "Arnout Kazemier",
+  "license": "MIT",
+  "devDependencies": {
+    "assume": "^2.2.0",
+    "browserify": "^16.5.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "pre-commit": "^1.2.0",
+    "sauce-browsers": "^2.0.0",
+    "sauce-test": "^1.3.3",
+    "uglify-js": "^3.9.0"
+  }
+}

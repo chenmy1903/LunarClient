@@ -1,0 +1,26 @@
+{
+  "name": "performance-now",
+  "description": "Implements performance.now (based on process.hrtime).",
+  "version": "2.1.0",
+  "author": "Braveg1rl <braveg1rl@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/braveg1rl/performance-now",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/braveg1rl/performance-now.git"
+  },
+  "private": false,
+  "dependencies": {},
+  "devDependencies": {
+    "bluebird": "^3.4.7",
+    "call-delayed": "^1.0.0",
+    "chai": "^3.5.0",
+    "chai-increasing": "^1.2.0",
+    "coffee-script": "~1.12.2",
+    "mocha": "~3.2.0",
+    "pre-commit": "^1.2.2"
+  },
+  "optionalDependencies": {},
+  "main": "lib/performance-now.js",
+  "typings": "src/index.d.ts"
+}

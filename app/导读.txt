@@ -1,0 +1,35 @@
+本文件夹为解密后的LC源代码(2.10.1)
+虽然新版本拥有更快的下载速度, 但是并不包含中文修复、启动器汉化、游戏性能优化等功能, 当lc启动器推出重大版本更新之后我才会更新本更新包
+禁止盈利
+版权信息在renderer.js.LICENSE.txt
+仓库: https://github.com/LunarClient/Launcher
+这是私密仓库, 打开后为404
+浏览器运行LunarClient教程
+1. 安装依赖库
+下面是依赖库(安装nodejs之后运行npm install <package>,把<package>换成包名)
+    "包名": "版本"
+    "@sentry/integrations": "^6.13.3",
+    "@sentry/react": "^6.13.3",
+    "bootstrap": "4.3.1",
+    "electron-log": "^4.2.4",
+    "electron-progressbar": "2.0.1",
+    "electron-store": "^5.1.1",
+    "electron-updater": "^4.3.4",
+    "jquery": "3.3.1",
+    "minecraft-pinger": "^1.0.5",
+    "node-cmd": "^5.0.0",
+    "node-downloader-helper": "^1.0.13",
+    "node-fetch": "^2.6.1",
+    "node-machine-id": "^1.1.12",
+    "p-queue": "^6.6.1",
+    "popper.js": "1.14.7",
+    "procbridge": "^1.1.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-tsparticles": "^1.37.5",
+    "rimraf": "^3.0.2",
+    "source-map-support": "^0.5.16",
+    "tar-fs": "^2.0.0",
+    "universal-analytics": "^0.4.23",
+    "unzip-stream": "^0.3.1"
+2. 使用node运行即可(没试过,安装依赖报错)

@@ -1,0 +1,7 @@
+provider: generic
+url: https://launcherupdates.lunarclientcdn.com
+publishAutoUpdate: true
+useMultipleRangeRequest: false
+updaterCacheDirName: lunarclient-updater
+publisherName:
+  - Moonsworth, LLC
