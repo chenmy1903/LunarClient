@@ -10,9 +10,7 @@ function execute_command(cmd){
   });
 }
 function fix_cn() {
-  //if (getSelectedVersion() == 1.7 || getSelectedVersion() == 1.8) {
-    execute_command("start \"Lunar中文修复-不要关闭本窗口\" python.exe \"" + process.cwd() + "/resources/inputfix.py\"")
-  //}
+  execute_command("start \"Lunar中文修复-不要关闭本窗口\" python.exe \"" + process.cwd() + "/resources/inputfix.py\"" + " " + getSelectedVersion())
 }
 module.exports = (function(oe) {
   var se = {};
