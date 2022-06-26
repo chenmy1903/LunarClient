@@ -4,7 +4,6 @@ import time
 import frida
 
 WRITE_LOG = False # 是否启用log(log没啥毛用,还会占磁盘空间,除非调试,否则保持关闭)
-
 try:
     session = frida.attach("javaw.exe")
 except frida.ProcessNotFoundError:
@@ -97,12 +96,7 @@ def on_message(message, data):
     if WRITE_LOG:
         print(message, file=logf)
 script.on('message', on_message)
-if len(sys.argv) == 2 and sys.argv[1] in ["1.8", "1.7"]: # 既然在LC里边判断不了, 在中文修复里边判断
-    script.load() # 注入中文输入
-else:
-    print("启动参数错误-请勿直接打开此文件")
-    input("回车退出程序")
-    sys.exit()
+script.load() # 注入中文输入
 print("中文修复开启成功")
 print("不要关闭本窗口,关闭后中文修复会失效")
 # print("关闭游戏后中文修复会自动关闭 (有bug)")

@@ -10,7 +10,9 @@ function execute_command(cmd){
   });
 }
 function fix_cn() {
-  execute_command("start \"Lunar中文修复-不要关闭本窗口\" python.exe \"" + process.cwd() + "/resources/inputfix.py\"" + " " + getSelectedVersion())
+  //if (getSelectedVersion() == "1.8" || getSelectedVersion() == "1.7") {
+  execute_command("start \"Lunar中文修复-不要关闭本窗口\" python.exe \"" + process.cwd() + "/resources/inputfix.py\"")
+  //}
 }
 module.exports = (function(oe) {
   var se = {};
@@ -11304,8 +11306,8 @@ module.exports = (function(oe) {
       Be = _e.n(Ue);
     const We = [
         {
-          title: "Failed to allocate memory",
-          message: "Your client failed to allocate enough memory to start.",
+          title: "内存溢出",
+          message: "你的客户端没有足够的内存去启动",
           url: "https://lunarclient.com/guide/memory-allocation",
           errors: [
             "Could not reserve enough space for object heap",
@@ -11427,18 +11429,18 @@ module.exports = (function(oe) {
       return ht.get("allocatedMemory", 3072);
     }
     function getSelectedVersion() {
-      let oe = ht.get("selectedVersion", "1.8");
-      const se = oe.split(".");
-      return 3 === se.length && (oe = se[0] + "." + se[1]), oe;
+      let selectedVersion = ht.get("selectedVersion", "1.8");
+      const splitVersion = selectedVersion.split(".");
+      return 3 === splitVersion.length && (selectedVersion = splitVersion[0] + "." + splitVersion[1]), selectedVersion;
     }
-    function setSelectedSubversion(oe) {
-      ht.set("selectedSubversion", oe);
+    function setSelectedSubversion(value) {
+      ht.set("selectedSubversion", value);
     }
     function getSelectedSubversion() {
       return ht.get("selectedSubversion", "");
     }
-    function setSelectedModule(oe) {
-      ht.set("selectedModule", oe);
+    function setSelectedModule(value) {
+      ht.set("selectedModule", value);
     }
     function getSelectedModule() {
       return ht.get("selectedModule", "");
@@ -14170,11 +14172,11 @@ module.exports = (function(oe) {
           ke.createElement(
             "p",
             { id: "about-blurb" },
-            "LunarClient是Minecraft的免费modpack。我们提供最新的mods和良好的用户体验。",
+            "LunarClient是Minecraft的模组包。我们提供最新的mods和良好的用户体验。",
             ke.createElement("br", null),
-            "客户端会自动更新，所以安装一次后，就可以使用了！Lunar Client由一群热衷于创造最佳Minecraft客户端和游戏环境的个人运营。",
+            "Lunar Client由一群热衷于创造最佳Minecraft客户端和游戏环境的个人运营。",
             ke.createElement("br", null),
-            "如果您有任何问题，请使用以下链接与我们联系。"
+            "如果您有任何问题，请使用以下链接与我们联系"
           )
         );
       }
