@@ -2,6 +2,12 @@
 
 > Write in Chinese
 
+## 下载
+
+> 可以的话去B站给个三连或点击右上角Star给星标, [B站传送门](https://www.bilibili.com/read/cv17100937)
+
+[点击此处](https://github.com/chenmy1903/LunarClient/releases)
+
 ## 这是什么
 
 > 中文修复感谢[sduoduo233](https://github.com/sduoduo233/LunarInputFix)的代码
@@ -34,7 +40,7 @@
 ### 2.10.1-fix2
 
 1. 修改不是人话的汉化
-2. 汉化错误报告部分
+2. 汉化部分错误报告
 
 ### 2.10.1-fix1
 
